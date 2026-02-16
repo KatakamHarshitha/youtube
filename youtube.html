@@ -2,7 +2,16 @@
 <html>
     <head>
         <title>Youtube.com</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">"
         <style>
+            p{
+                font-family: Roboto, Arial;
+                margin-top:0px;
+                margin-bottom:0px;
+            }
             .thumbnail-1,
             .thumbnail-2{
                 width:300px;
@@ -10,9 +19,8 @@
             }
             .search_bar{
                 display:block;
-            }
-            .vedio-title{
-                width:300px;
+                border-radius: 8px;
+                border: 2px solid rgb(200,200,200);
             }
             .vedio-preview{
                 width:300px;
@@ -20,25 +28,71 @@
                 vertical-align:top ;
                 margin:10px;
             }
+            .vedio-title{
+                margin-top: 0px;
+                font-size: 14px;
+                font-weight:bold;
+                line-height: 20px;
+                margin-bottom:12px;
+            }
+            .channel-picture{
+                display: inline-block;
+                width:50px;
+                vertical-align:top;
+            }
+            .vedio-info{
+                display:inline-block;
+                width: 200px;
+                font-size: 10px;
+            }
+            .profile-picture{
+                width:40px;
+                border-radius:40px;
+            }
+            .thumbnail-row{
+                margin-bottom:12px;
+            }
+            .vedio-aurthor,
+            .vedio-status{
+                font-size:12px;
+                color:rgb(96,96,96);
+            }
+            .vedio-aurthor{
+                margin-bottom:4px;
+            }
         </style>
     </head>
-    <body>
+    <body>  
         <input class="search_bar" type="text" placeholder="search">
         <div class="vedio-preview">
-            <div><img class=" thumbnail-1"src="thumbnails/thumbnail-1.webp">
+            <div class="thumbnail-row">
+                <img class=" thumbnail-1"src="thumbnails/thumbnail-1.webp">
             </div>
             <div>
-                <img src="channel-pictures/c-pic.jpeg">
-                <p class="vedio-title"> Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                <p class="text1">Marques Browniee</p>
-                <p class="text2">3.4M views &#183; 6 months ago</p>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/c-pic.jpeg">
+                </div>
+                <div class="vedio-info">
+                    <p class="vedio-title"> Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="vedio-aurthor">Marques Browniee</p>
+                    <p class="vedio-status">3.4M views &#183; 6 months ago</p>
+                </div>
             </div>
         </div>
-        <div class="vedio-preview">
-            <img class=" thumbnail-2"src="thumbnails/thumbnail-2.webp">
-            <p class="vedio-title">Try Not To Laugh Challenge #9</p>
-            <p class="text1">Markiplier</p>
-            <p class="text2">19M views &#183; 4 years ago</p>
+       <div class="vedio-preview">
+            <div class="thumbnail-row">
+                <img class=" thumbnail-2"src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+                </div>
+                <div class="vedio-info">
+                    <p class="vedio-title"> Try Not To Laugh Challe#9</p>
+                    <p class="vedio-aurthor">Markiplier</p>
+                    <p class="vedio-status">19M views &#183; 4 years ago</p>
+                </div>
+            </div>
         </div>
       </body>
 </html>
