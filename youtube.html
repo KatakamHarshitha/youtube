@@ -35,16 +35,6 @@
                 line-height: 20px;
                 margin-bottom:12px;
             }
-            .channel-picture{
-                display: inline-block;
-                width:50px;
-                vertical-align:top;
-            }
-            .vedio-info{
-                display:inline-block;
-                width: 200px;
-                font-size: 10px;
-            }
             .profile-picture{
                 width:40px;
                 border-radius:40px;
@@ -60,6 +50,10 @@
             .vedio-aurthor{
                 margin-bottom:4px;
             }
+            .vedio-grid{
+                display:grid;
+                grid-template-columns:50px 1fr;
+            }
         </style>
     </head>
     <body>  
@@ -68,7 +62,7 @@
             <div class="thumbnail-row">
                 <img class=" thumbnail-1"src="thumbnails/thumbnail-1.webp">
             </div>
-            <div>
+            <div class="vedio-grid">
                 <div class="channel-picture">
                     <img class="profile-picture" src="channel-pictures/c-pic.jpeg">
                 </div>
